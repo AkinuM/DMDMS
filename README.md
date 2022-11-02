@@ -68,8 +68,8 @@
 | Staff         | id, name (first_name, middle_name, last_name), tel, email, passport_id, position_id|
 | Tickets       | id, price, row, place, session_id, availability|
 | Hall   | id, name, capacity|
-| Passport     | id, birth date, sex, residence address, IIN        |
-| Anime | id, name, genre_id, release date, duration        |
+| Passport     | id, birth_date, sex, residence_address, IIN        |
+| Anime | id, name, genre_id, release_date, duration        |
 | Genre          | id, name, description     |
 | Session        | id, anime_id, hall_id, date, time, staff_id       |
 
