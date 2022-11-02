@@ -79,4 +79,5 @@
 
 ## Даталогическая схема базы данных 
 
-![DB (1)](https://user-images.githubusercontent.com/73168415/199538415-2dc3c9c2-58e5-427d-9941-95f77f829022.jpeg)
+![DB (2)](https://user-images.githubusercontent.com/73168415/199550857-ce411dea-8804-4510-ba69-27e340b8aaa8.jpeg)
+
