@@ -65,13 +65,13 @@
 | Entity  | Attributes  |
 |:------------- |:--------------- |
 | Positions        | id, name, salary |
-| Staff         | id, name (first_name, middle_name, last_name), tel, email, passport, position|
-| Tickets       | id, price, row, place, session, availability|
+| Staff         | id, name (first_name, middle_name, last_name), tel, email, passport_id, position_id|
+| Tickets       | id, price, row, place, session_id, availability|
 | Hall   | id, name, capacity|
 | Passport     | id, birth date, sex, residence address, IIN        |
-| Anime | id, name, genre, release date, duration        |
+| Anime | id, name, genre_id, release date, duration        |
 | Genre          | id, name, description     |
-| Session        | id, anime, hall, date, time, staff       |
+| Session        | id, anime_id, hall_id, date, time, staff_id       |
 
 ## Информационная схема базы данных 
 
