@@ -10,4 +10,6 @@ SELECT * FROM passport WHERE residence_address LIKE '%Мазурова%';
 
 SELECT * FROM tickets WHERE availability IS TRUE;
 
-SELECT * FROM tickets LIMIT 10;
+SELECT * FROM tickets LIMIT 5 OFFSET 2;
+
+SELECT DISTINCT last_name FROM staff WHERE last_name LIKE '%в' ORDER BY last_name DESC ;

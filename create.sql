@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS staff
     tel char(13) UNIQUE NOT NULL,
     email varchar(50) NOT NULL,
 	passport_id int REFERENCES passport(passport_id),
-	position_id int REFERENCES positions(position_id)
+	position_id int REFERENCES positions(position_id) ON DELETE SET NULL
 );
 
 
@@ -97,6 +97,8 @@ CREATE TABLE IF NOT EXISTS tickets
 CREATE TABLE IF NOT EXISTS logging
 (
     log_id serial PRIMARY KEY,
-    log_message varchar(100) NOT NULL,
-    staff_id int REFERENCES staff(staff_id)
+	username varchar(50) NOT NULL,
+	instructionname text NOT NULL,
+	tablename varchar(50) NOT NULL,
+    log_message text NOT NULL
 );

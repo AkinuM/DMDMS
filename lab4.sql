@@ -8,7 +8,7 @@ SELECT place, COUNT(*) as count_place FROM tickets GROUP BY place HAVING COUNT(*
 
 
 SELECT first_name, last_name FROM staff 
-WHERE EXISTS (SELECT pos_name, salary FROM positions WHERE staff.position_id = positions.position_id);
+WHERE EXISTS (SELECT * FROM positions WHERE staff.position_id = positions.position_id);
 
 
 SELECT hall_name, capacity,
@@ -16,3 +16,6 @@ CASE WHEN capacity > 150 THEN 'Big'
 ELSE 'Small'
 END as capacity_tier
 FROM hall;
+
+SELECT session_id, sess_date FROM sessions WHERE hall_id IN (SELECT hall_id FROM sessions GROUP BY hall_id HAVING COUNT(*) = 2)
+
